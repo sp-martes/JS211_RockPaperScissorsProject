@@ -15,10 +15,8 @@ const rockPaperScissors = (hand1, hand2) => {
   let handOne = hand1.trim().toLowerCase();
   let handTwo = hand2.trim().toLowerCase();
   
-    if(handOne !== 'rock' && handOne !== 'paper' && handOne !== 'scissors'){
-      return "no cheating"
-    }
-    if(handTwo !== 'rock' && handTwo !== 'paper' && handTwo !== 'scissors'){
+    if((handOne !== 'rock' && handOne !== 'paper' && handOne !== 'scissors') || 
+       (handTwo !== 'rock' && handTwo !== 'paper' && handTwo !== 'scissors')){
       return "no cheating"
     }
     if (handOne === handTwo){
@@ -30,7 +28,7 @@ const rockPaperScissors = (hand1, hand2) => {
         else{
         return 'Hand two wins!'
         }   
-        }
+    }
     
 
 
